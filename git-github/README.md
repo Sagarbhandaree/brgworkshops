@@ -1,6 +1,6 @@
-# Git and GitHub Workshop Content
+# Git and GitHub Workshop Syllabus
 
-- [Git and GitHub Workshop Content](#git-and-github-workshop-content)
+- [Git and GitHub Workshop Syllabus](#git-and-github-workshop-syllabus)
   - [Introduction](#introduction)
     - [Instructor](#instructor)
     - [Git](#git)
