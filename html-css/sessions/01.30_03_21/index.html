@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 20px;">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS workshop</title>
+
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Internal CSS -->
+    <style>
+      /* Apply CSS to all elements */
+      * {
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Raleway', sans-serif;
+      }
+      h1, h2, h3 {
+        /* margin/padding: top/bottom left/right */
+        margin: 1em 0;
+      }
+
+
+      /*
+        CSS Comment
+        CSS Syntax:
+
+        selector {
+          css-property1: css-value1;
+          css-property2: css-value2;
+          ...
+        }
+      */
+
+      #page-content {
+        max-width: 900px;
+        margin: auto;
+      }
+      .page-title {
+        text-align: center;
+      }
+
+      h1 { /* tag or element selector */
+        text-transform: uppercase;
+        font-size: 30px;
+      }
+      .link-image {
+        background-color: #eee;
+        /* padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px; */
+        padding: 20px;
+        /* padding: top right bottom left; */
+      }
+      .link-image img {
+        margin-top: 10px;
+        height: 200px;
+        width: 300px;
+        display: block;
+        border-radius: 10px;
+      }
+      .link-image p img {
+        margin-top: 10px;
+        display: inline;
+        width: 150px;
+        height: 150px;
+        /* border: 3px solid rgb(0,0,256); */
+        border: 3px solid #aaa;
+      }
+      .link-image > img {
+        box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      }
+
+      #headings {
+        padding: 1rem;
+        background-color: #eee;
+      }
+      #para {
+        padding: 1rem;
+      }
+      #list {
+        background-color: #eee;
+        padding: 1rem;
+      }
+      #table {
+        padding: 1rem;
+      }
+      #floats {
+        background-color: #eee;
+        /* padding: 1rem; */
+        /* width: 800px; */
+        /* padding-bottom: 2rem; */
+        overflow: auto;
+      }
+      #floats .left, #floats .right {
+        width: 50%;
+        padding: 1rem;
+        border: 1px solid rgb(68, 164, 68);
+      }
+      #floats .left {
+        float: left;
+      }
+      #floats .right {
+        float: right;
+      }
+      .clear {
+        clear: both;
+      }
+
+      footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        font-size: 13px;
+        padding: 0.5rem;
+      }
+
+      .link-image .text-content {
+        width: 400px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .parent {
+        height: 300px;
+        width: 300px;
+        background-color: #eee;
+        margin: 2rem;
+        position: relative;
+      }
+      .parent .box {
+        height: 50px;
+        width: 50px;
+        font-size: 0.7rem;
+        color: #fff;
+        background: dodgerblue;
+      }
+      .parent .child1 {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+      }
+      .parent .child2 {
+        background-color: lightcoral;
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Inline CSS -->
+    <h1 class="page-title" style="color: red; margin-left: 16px; font-size: 35px;">HTML and CSS Workshop</h1>
+
+    <main id="page-content">
+
+      <!-- Headings -->
+      <div id="headings">
+        <h2>Subtitle </h2>
+        <h3>Sub Subtitle </h2>
+        <h6>Sub Subtitle 6</h6>
+      </div>
+
+      <!-- Paragraph and Text formatting -->
+      <div id="para">
+        <h2>Paragraph and Text formatting</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur
+          <b>adipisicing</b> elit. Quod corrupti quis
+          ducimus <strong>doloribus</strong> ab perferendis eum fugit sed enim totam!
+          <br>
+          <br>
+          Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. <mark>Corporis</mark> nostrum odit quae minus corrupti
+          recusandae <i>laboriosam</i> reiciendis amet <em>animi</em> deleniti.
+          Tempore vitae unde saepe voluptates beatae, aliquid vero accusamus vel.
+        </p>
+      </div>
+
+      <!-- List -->
+      <div id="list">
+        <h2>Lists</h2>
+        <h3>Fruits</h3>
+        <ul style="list-style: circle;">
+          <li>Orange</li>
+          <li>Mango</li>
+          <li>Banana</li>
+        </ul>
+
+        <h3>Flowers</h3>
+        <ol>
+          <li>Rose</li>
+          <li>Lily</li>
+          <li>Lotus</li>
+        </ol>
+      </div>
+
+      <!-- Tables -->
+      <div id="table">
+        <h2>Tables</h2>
+        <table>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Roll No</th>
+          </tr>
+          <tr>
+            <td>1.</td>
+            <td>Sagar</td>
+            <td>1001</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Anita</td>
+            <td>1002</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Link and Image -->
+      <div id="link-image" class="link-image">
+        <h2 style="text-transform: uppercase; font-size: 30px;">Link and Image</h2>
+        <!-- absolute image url -->
+        <img src="https://source.unsplash.com/collection/190727/1600x900" alt="HTML" width="200" >
+        <p>
+          <a href="/" target="_blank">Click here</a>
+          <br>
+          <!-- relative image url -->
+          <img src="images/html.jpg" alt="HTML" width="200" >
+          <img src="images/html.jpg" alt="HTML" width="200" >
+          <img src="images/html.jpg" alt="HTML" width="200" >
+          <img src="images/html.jpg" alt="HTML" width="200" >
+        </p>
+
+        <p class="text-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatibus magnam perspiciatis facilis ducimus aspernatur doloribus laudantium fugit placeat cumque!
+        </p>
+      </div>
+
+      <!-- CSS Positioning -->
+      <div id="css-positioning">
+        <h1></h1>
+        <div class="parent">
+          <div class="child1 box">
+            Child 1
+          </div>
+          <div class="child2 box">
+            Child 2
+          </div>
+        </div>
+      </div>
+
+      <!-- Float  -->
+      <div id="floats">
+        <div class="left">
+          <h2>Left side</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut error voluptate temporibus, fugiat officia porro consequatur modi ea in deserunt.
+          </p>
+        </div>
+        <div class="right">
+          <h2>Right side</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut error voluptate temporibus, fugiat officia porro consequatur modi ea in deserunt.
+          </p>
+        </div>
+      </div>
+
+      <div class="clear"></div>
+
+    </main>
+
+    <footer>
+      <p>This is footer</p>
+    </footer>
+
+  </body>
+</html>
