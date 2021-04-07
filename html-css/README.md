@@ -26,12 +26,6 @@ __HTML__ and __CSS__ are the building blocks of the web technology.
 
 In this workshop, you will get glimpse of HTML and CSS basics and also get familiar with the art of using together to make website components like navigation bar, card or others
 
-### Instructor
-
-[Budh Ram Gurung (or BRG)](https://freelancerbrg.com) is an _IT Teacher, Educator, Mentor, Full Stack Engineer, Social Coder and a Researcher_. He has around __10 years of IT Experience__.
-Following his passion, he _switched from core software development to teaching in 2019_ and has been teaching, counselling students to become a _good professional engineers_.
-Click [here](https://freelancerbrg.com) to know more about him.
-
 ### What is HTML
 
 - HTML stands for _HyperText Markup Language_.
