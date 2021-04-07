@@ -30,14 +30,6 @@
 
 In this hands-on workshop, you’ll learn from _building your GitHub developer portfolio_ to basic _Git commands_ and manage the project source code.
 
-### Instructor
-
-[Budh Ram Gurung (or BRG)](https://freelancerbrg.com) is an _IT Teacher, Educator, Mentor, Full Stack Engineer, Social Coder and a Researcher_.
-He has around __10 years of IT Experience__ including _Full Stack Web Development, QA Automation, DevOps softwares development and Open Source community management_.
-Following his passion, he _switched from core software development to teaching in 2019_ and has been teaching, counselling students to become a _good professional engineers_.
-### Git
-
-Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 
 #### Install
 
